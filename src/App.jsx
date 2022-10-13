@@ -11,17 +11,17 @@ export function App() {
 	const [dataTroops, setDataTroops] = useState();
 
 	async function getCities() {
-		await axios("../src/data/cities.json").then((response) => {
+		await axios("../data/cities.json").then((response) => {
 			setDataCities(response.data);
 		});
 	}
 	async function getTemperature() {
-		await axios("../src/data/temps.json").then((response) => {
+		await axios("../data/temps.json").then((response) => {
 			setDataTemperature(response.data);
 		});
 	}
 	async function getTroops() {
-		await axios.get("../src/data/troops.json").then((response) => {
+		await axios.get("../data/troops.json").then((response) => {
 			setDataTroops(response.data);
 		});
 	}

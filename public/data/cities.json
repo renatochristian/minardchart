@@ -1,0 +1,24 @@
+{
+	"cities": {
+		"0":  { "long": "24.0", "lat": "55.0", "city": "Kowno" },
+		"1":  { "long": "25.3", "lat": "54.7", "city": "Wilna" },
+		"2":  { "long": "26.4", "lat": "54.4", "city": "Smorgoni" },
+		"3":  { "long": "26.8", "lat": "54.3", "city": "Moiodexno" },
+		"4":  { "long": "27.7", "lat": "55.2", "city": "Gloubokoe" },
+		"5":  { "long": "27.6", "lat": "53.9", "city": "Minsk" },
+		"6":  { "long": "28.5", "lat": "54.3", "city": "Studienska" },
+		"7":  { "long": "28.7", "lat": "55.5", "city": "Polotzk" },
+		"8":  { "long": "29.2", "lat": "54.4", "city": "Bobr" },
+		"9":  { "long": "30.2", "lat": "55.3", "city": "Witebsk" },
+		"10": { "long": "30.4", "lat": "54.5", "city": "Orscha" },
+		"11": { "long": "30.4", "lat": "53.9", "city": "Mohilow" },
+		"12": { "long": "32.0", "lat": "54.8", "city": "Smolensk" },
+		"13": { "long": "33.2", "lat": "54.9", "city": "Dorogobouge" },
+		"14": { "long": "34.3", "lat": "55.2", "city": "Wixma" },
+		"15": { "long": "34.4", "lat": "55.5", "city": "Chjat" },
+		"16": { "long": "36.0", "lat": "55.5", "city": "Mojaisk" },
+		"17": { "long": "37.6", "lat": "55.8", "city": "Moscou" },
+		"18": { "long": "36.6", "lat": "55.3", "city": "Tarantino" },
+		"19": { "long": "36.5", "lat": "55.0", "city": "Malo-Jarosewii" }
+	}
+}
