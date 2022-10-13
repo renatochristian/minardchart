@@ -1,0 +1,67 @@
+{
+	"temperature": {
+		"0": {
+			"long": "37.6",
+			"temp": "0",
+			"month": "Oct",
+			"day": 18,
+			"date": "18OCT1812"
+		},
+		"1": {
+			"long": "36.0",
+			"temp": "0",
+			"month": "Oct",
+			"day": 24,
+			"date": "24OCT1812"
+		},
+		"2": {
+			"long": "33.2",
+			"temp": "-9",
+			"month": "Nov",
+			"day": 9,
+			"date": "09NOV1812"
+		},
+		"3": {
+			"long": "32.0",
+			"temp": "-21",
+			"month": "Nov",
+			"day": 14,
+			"date": "14NOV1812"
+		},
+		"4": {
+			"long": "29.2",
+			"temp": "-11",
+			"month": "Nov",
+			"day": 24,
+			"date": "24NOV1812"
+		},
+		"5": {
+			"long": "28.5",
+			"temp": "-20",
+			"month": "Nov",
+			"day": 28,
+			"date": "28NOV1812"
+		},
+		"6": {
+			"long": "27.2",
+			"temp": "-24",
+			"month": "Dec",
+			"day": 1,
+			"date": "01DEC1812"
+		},
+		"7": {
+			"long": "26.7",
+			"temp": "-30",
+			"month": "Dec",
+			"day": 6,
+			"date": "06DEC1812"
+		},
+		"8": {
+			"long": "25.3",
+			"temp": "-26",
+			"month": "Dec",
+			"day": 7,
+			"date": "07DEC1812"
+		}
+	}
+}

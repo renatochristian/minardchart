@@ -1,0 +1,15 @@
+#root {
+	max-width: 1900px;
+	margin: 0 auto;
+	padding: 0.5rem;
+	text-align: center;
+}
+
+.marginTemperatureChart {
+	margin-top: -65px;
+}
+
+text {
+	font-family: "Cardo", serif;
+}
+
