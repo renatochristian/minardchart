@@ -76,7 +76,7 @@ export function App() {
 							Replica
 						</span>
 						<div className="border-2 rounded-lg">
-							<SimpleAreaChart />
+							<SimpleAreaChart dataCities={Object.values(dataCities)[0]} />
 							<TemperatureChart
 								dataTemperature={dataTemperature}
 							/>

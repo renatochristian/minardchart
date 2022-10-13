@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
 	XAxis,
 	YAxis,
@@ -8,30 +8,6 @@ import {
 	LabelList,
 	CartesianGrid,
 } from "recharts";
-import { CustomTooltip } from "./CustomTooltip";
-
-const cities = [
-	{ lat: "55.0", long: "24.0", city: "Kowno" },
-	{ lat: "54.7", long: "25.3", city: "Wilna" },
-	{ lat: "54.4", long: "26.4", city: "Smorgoni" },
-	{ lat: "54.3", long: "26.8", city: "Moiodexno" },
-	{ lat: "55.2", long: "27.7", city: "Gloubokoe" },
-	{ lat: "53.9", long: "27.6", city: "Minsk" },
-	{ lat: "54.3", long: "28.5", city: "Studienska" },
-	{ lat: "55.5", long: "28.7", city: "Polotzk" },
-	{ lat: "54.4", long: "29.2", city: "Bobr" },
-	{ lat: "55.3", long: "30.2", city: "Witebsk" },
-	{ lat: "54.5", long: "30.4", city: "Orscha" },
-	{ lat: "53.9", long: "30.4", city: "Mohilow" },
-	{ lat: "54.8", long: "32.0", city: "Smolensk" },
-	{ lat: "54.9", long: "33.2", city: "Dorogobouge" },
-	{ lat: "55.2", long: "34.3", city: "Wixma" },
-	{ lat: "55.5", long: "34.4", city: "Chjat" },
-	{ lat: "55.5", long: "36.0", city: "Mojaisk" },
-	{ lat: "55.8", long: "37.6", city: "Moscou" },
-	{ lat: "55.3", long: "36.6", city: "Tarantino" },
-	{ lat: "55.0", long: "36.5", city: "Malo-Jarosewii" },
-];
 
 const group1A = [
 	{
@@ -407,10 +383,12 @@ const group3R = [
 	},
 ];
 
-export function SimpleAreaChart() {
-	// const [sizeStroke, setSizeStroke] = useState(0);
+export function SimpleAreaChart(props) {
+	const [dataCities, setDataCities] = useState();
 
-	// console.log(sizeStroke)
+	useEffect(() => {
+		setDataCities(Object.values(props.dataCities));
+	}, []);
 
 	return (
 		<div className="mt-4">
@@ -440,10 +418,7 @@ export function SimpleAreaChart() {
 					orientation="right"
 				/>
 				<CartesianGrid />
-				<Tooltip
-					cursor={{ strokeDasharray: "30 30" }}
-				/>
-				
+				<Tooltip cursor={{ strokeDasharray: "30 30" }} />
 				<Scatter
 					name="group3R"
 					data={group3R}
@@ -495,34 +470,20 @@ export function SimpleAreaChart() {
 					fill="transparent"
 					line={{ stroke: "#e6cdab", strokeWidth: 40 }}
 				>
-					{/* ideia pra amanha,
-				testar a chamada de line, varrendo o array group1A e a cada troca de valor survivals,
-				adicionar esse valor a um array e chamar uma scatter
-				exemplo: 3 valores iguais e um diferente.
-				adicionar os 4 a um array, e calcular o stroke do svg com base no primeiro valor de survivals do array
-				exemplo: 2 valores diferentes.
-				add o primeiro valor e o seguinte a um array chamando scatter
-				para criar uma linha menor que a anterior nesse trecho */}
-
-					{/* <Scatter
-					name="group1A"
-					data={group1A}
-					fill="#e6cdab"
-					line={<CustomizedLine data={group1A} />}
-				> */}
 					<LabelList
 						dataKey="survivors"
 						angle="40"
 						offset={0}
-						position="insideBottom" 
+						position="insideBottom"
 					/>
 				</Scatter>
-				<Scatter
-					name="city"
-					data={cities}
-					fill="black"
-				>
-					<LabelList dataKey="city" position="insideBottom" offset="15" angle="0" />
+				<Scatter name="city" data={dataCities} fill="black">
+					<LabelList
+						dataKey="city"
+						position="insideBottom"
+						offset="15"
+						angle="0"
+					/>
 				</Scatter>
 			</ScatterChart>
 		</div>
