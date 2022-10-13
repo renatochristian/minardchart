@@ -438,7 +438,7 @@ export function SimpleAreaChart(props) {
 				<Scatter
 					name="group1R"
 					data={group1R}
-					fill="red"
+					fill="#aaa"
 					line={{ stroke: "#bbbbbb", strokeWidth: 20 }}
 				>
 					<LabelList
@@ -451,7 +451,7 @@ export function SimpleAreaChart(props) {
 				<Scatter
 					name="group3A"
 					data={group3A}
-					fill="black"
+					fill="#b6a285"
 					line={{ stroke: "#e6cdab", strokeWidth: 10 }}
 				>
 					{/* <LabelList dataKey="survivors" position="top" angle="40" offset={30}/> */}
@@ -459,7 +459,7 @@ export function SimpleAreaChart(props) {
 				<Scatter
 					name="group2A"
 					data={group2A}
-					fill="black"
+					fill="#b6a285"
 					line={{ stroke: "#e6cdab", strokeWidth: 12 }}
 				>
 					{/* <LabelList dataKey="survivors" position="top" angle="40" offset={30} /> */}
@@ -467,21 +467,21 @@ export function SimpleAreaChart(props) {
 				<Scatter
 					name="group1A"
 					data={group1A}
-					fill="transparent"
+					fill="#b6a285"
 					line={{ stroke: "#e6cdab", strokeWidth: 40 }}
 				>
 					<LabelList
 						dataKey="survivors"
-						angle="40"
-						offset={0}
-						position="insideBottom"
+						angle="0"
+						offset={10}
+						position="bottom"
 					/>
 				</Scatter>
-				<Scatter name="city" data={dataCities} fill="black">
+				<Scatter name="city" data={dataCities} fill="transparent">
 					<LabelList
 						dataKey="city"
 						position="insideBottom"
-						offset="15"
+						offset="0"
 						angle="0"
 					/>
 				</Scatter>

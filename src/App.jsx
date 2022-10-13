@@ -66,20 +66,35 @@ export function App() {
 							);
 						})}
 					</div>
-					<div className="flex flex-col items-center text-center text-black my-10">
-						<span className="capitalize text-3xl py-4">Charts</span>
-						<span className="capitalize text-2xl py-4">
-							original
-						</span>
+					<div className="flex flex-col capitalize items-center text-center text-black my-10">
+						<span className="text-3xl py-4">Charts</span>
+						<span className=" text-2xl py-4">original</span>
 						<img src="./minard.png" className="w-[1280px]" />
-						<span className="capitalize text-2xl py-4">
-							Replica
-						</span>
+						<span className="text-2xl py-4">Replica</span>
 						<div className="border-2 rounded-lg">
-							<SimpleAreaChart dataCities={Object.values(dataCities)[0]} />
+							<SimpleAreaChart
+								dataCities={Object.values(dataCities)[0]}
+							/>
 							<TemperatureChart
 								dataTemperature={dataTemperature}
 							/>
+						</div>
+					</div>
+					<div className="flex flex-col items-center text-center text-black my-10 ">
+						<span className="capitalize text-3xl py-4 ">
+							Comparisons with the original chart
+						</span>
+						<div className="w-[500px] flex flex-col text-left gap-4">
+							<span className="gap">
+								-&gt; Not able to replicate the exact forms of
+								graphic, specially the descending size bars.{" "}
+								<br />
+							</span>
+							<span className="italic">
+							-&gt; (Possible solution not implemented: Looping
+								through the array inserting the line and insert
+								a line everytime the bar reduce their size)
+							</span>
 						</div>
 					</div>
 					<div className="flex flex-col items-center text-center text-black my-10">
@@ -111,11 +126,14 @@ export function App() {
 								</a>
 								<span className="pl-5 flex flex-col gap">
 									<span>
-										-&gt; Chart modelling library integrated to react js, 
-										with simple animations and usability integrated
+										-&gt; Chart modelling library integrated
+										to react js, with simple animations and
+										usability integrated
 									</span>
 									<span>
-										-&gt; It's integration with react facilitates its use inside the framework;
+										-&gt; It's integration with react
+										facilitates its use inside the
+										framework;
 									</span>
 								</span>
 							</li>
@@ -128,11 +146,13 @@ export function App() {
 								</a>
 								<span className="pl-5 flex flex-col gap">
 									<span>
-										-&gt; Css framework for user friendly classes, helping with responsive design
+										-&gt; Css framework for user friendly
+										classes, helping with responsive design
 									</span>
 									<span>
-										-&gt; Also integrated to react, eliminate the 
-										necessity of too many personalized css
+										-&gt; Also integrated to react,
+										eliminate the necessity of too many
+										personalized css
 									</span>
 								</span>
 							</li>
